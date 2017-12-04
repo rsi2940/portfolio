@@ -1,3 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+
 body {
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+a {
+  text-decoration: none;
+
+  color: rgba(0, 0, 0, 0.75);
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: 0.4;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+a.twitter {
+  background-image: url(assets/image/twitter.svg);
+}
+
+a.facebook {
+  background-image: url(assets/image/facebook.svg);
+}
+a.linkedin {
+  background-image: url(assets/image/linkedin.svg);
+}
+a.github {
+  background-image: url(assets/image/github.svg);
+}
+a.social:hover {
+  cursor: pointer;
+  opacity: 1;
 }

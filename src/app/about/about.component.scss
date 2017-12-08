@@ -1,3 +1,17 @@
-p {
-  height: 100vh;
+.ro {
+  margin: 0 2em 0 0;
+  // color: #3f3844;
+  // font-weight: bolder;
+  line-height: 2em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  //grid-template-rows: max-content;
+  grid-template-areas: ' . ap  . p p p p p p p p p';
+}
+.ro > .ptags {
+  grid-area: p;
+  text-align: justify;
+}
+app-profile {
+  grid-area: ap;
 }

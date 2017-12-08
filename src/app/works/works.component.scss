@@ -1,0 +1,64 @@
+.container {
+  //width: 600px;
+  // position: relative;
+  //margin: 1em 0.5em;
+  display: flex;
+  width: 90vw;
+  padding-top: 2.25em;
+  padding-bottom: 0.25em;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  > .portfolio {
+    padding: 0.5em;
+  }
+}
+
+pre {
+  //left: 45vw;
+  // margin-left: 1em;
+  background-image: url('../../assets/image/bg.png');
+  @media (min-width: 960px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 3em;
+    top: 4.4em;
+  }
+}
+.portfolio {
+  margin-top: 0.5em;
+
+  > div {
+    width: 350px;
+    height: 250px;
+
+    > img {
+      //background-position: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 7px;
+      box-shadow: 2px 2px 4px 2px rgba(20, 147, 179, 0.7);
+      transition: all 0.5s linear;
+    }
+    > img:hover {
+      border-radius: 5px;
+      box-shadow: 2px 2px 4px 2px rgba(20, 147, 179, 0.2);
+    }
+  }
+
+  .magiccake > img:hover {
+    content: url('../../assets/image/works/magicCake3.png');
+  }
+  .best-city > img:hover {
+    content: url('../../assets/image/works/bestcityguide2.png');
+  }
+  .mockprofile > img:hover {
+    content: url('../../assets/image/works/mockprofile2.png');
+  }
+  .apifetch > img:hover {
+    content: url('../../assets/image/works/apifetchjs2.png');
+  }
+}

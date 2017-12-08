@@ -1,27 +1,9 @@
 <div class="container">
-  <section class="profile">
-    <a routerLink="/aboutme"
-       class="profile-img">
-      <img src="./assets/image/me2017.jpg"
-           alt="portrait of Rishi Khatiwada">
-    </a>
-    <ul class="social-links">
-      <li>
-        <a class="social github">GitHub</a>
-      </li>
-      <li>
-        <a class="social linkedin">LinkedIn</a>
-      </li>
-      <li>
-        <a class="social twitter">Twitter</a>
-      </li>
-      <li>
-        <a class="social facebook">Facebook</a>
-      </li>
-    </ul>
-  </section>
+
   <header>
-    <h1 class="name">Rishi Khatiwada</h1>
+    <a routerLink="/aboutme">
+      <h1 class="name">Rishi Khatiwada</h1>
+    </a>
     <nav>
       <a class="aboutme"
          routerLink="/aboutme">about me</a>
@@ -34,5 +16,5 @@
   <div class="content-wrapper">
     <router-outlet></router-outlet>
   </div>
-  <app-footer></app-footer>
+  <app-footer class="hidden"></app-footer>
 </div>

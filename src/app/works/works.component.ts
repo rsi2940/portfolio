@@ -44,15 +44,23 @@ export class WorksComponent implements OnInit {
   }
   setAlt() {
     this.magiccakeAlt =
-      'This is an imaginary recipe book concept of basic html and css learning. A static web page with a simple form.';
-    this.mockprofileAlt = '';
-    this.bestcityguideAlt = '';
-    this.layouttechAlt = '';
-    this.jsdomAlt = '';
-    this.jsdrumkitAlt = '';
-    this.catclickAlt = '';
-    this.apifetchAlt = '';
-    this.lightboxAlt = '';
+      'This is an imaginary recipe book. Learning concept of basic html and css. A static web page with a simple form.';
+    this.mockprofileAlt =
+      'This is a mock portfolio of an emerging Front End Developer. It was an assignment assigned for responsive styling.';
+    this.bestcityguideAlt =
+      'A website of an imaginary city. It was learning more on mobile first responsive design.';
+    this.layouttechAlt =
+      'This is an assignment portfolio mockup mobile first design applying css flex';
+    this.jsdomAlt =
+      'This is a recreation of Best City Guide all from plain JavaScript.';
+    this.jsdrumkitAlt =
+      'JavaScript; learning the eventlisteners. A simple JSDrumkit';
+    this.catclickAlt =
+      'A catclicker inspired from udacity course of using MVC like representation in plain JavaScript.';
+    this.apifetchAlt =
+      'Learning API fetch; async await. Star Wars api fetch, listing all films and its details.';
+    this.lightboxAlt =
+      'One page application displaying gallery of photographs and implementation of live search light box';
   }
 
   magiccakeCh() {

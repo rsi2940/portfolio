@@ -1,12 +1,27 @@
 .ro {
-  margin: 0 2em 0 0;
-  // color: #3f3844;
-  // font-weight: bolder;
+  margin: 0 auto;
+  padding: 1em;
   line-height: 2em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   //grid-template-rows: max-content;
-  grid-template-areas: ' . ap  . p p p p p p p p p';
+
+  grid-template-rows: max-content 1fr;
+
+  grid-template-areas:
+    '. ap ap ap ap ap ap ap ap ap ap .'
+    'p p p p p p p p p p p p';
+
+  @media (min-width: 960px) {
+    grid-template-areas: ' . ap  . p p p p p p p p p';
+
+    > .ptags {
+      margin-top: 1em;
+    }
+    app-profile {
+      margin-top: 5em;
+    }
+  }
 }
 .ro > .ptags {
   grid-area: p;

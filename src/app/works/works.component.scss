@@ -1,6 +1,6 @@
 .container {
   //width: 600px;
-  // position: relative;
+  //position: absolute;
   //margin: 1em 0.5em;
   display: flex;
   width: 90vw;
@@ -8,7 +8,7 @@
   padding-bottom: 0.25em;
   margin: 0 auto;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   > .portfolio {
     padding: 0.5em;
   }
@@ -18,6 +18,7 @@ pre {
   //left: 45vw;
   // margin-left: 1em;
   background-image: url('../../assets/image/bg.png');
+  z-index: 1;
   @media (min-width: 960px) {
     display: flex;
     align-items: center;
@@ -26,6 +27,7 @@ pre {
     width: 100%;
     height: 3em;
     top: 4.4em;
+    z-index: 1;
   }
 }
 .portfolio {
@@ -34,6 +36,7 @@ pre {
   > div {
     width: 350px;
     height: 250px;
+    position: relative;
 
     > img {
       //background-position: center;
@@ -47,18 +50,24 @@ pre {
       border-radius: 5px;
       box-shadow: 2px 2px 4px 2px rgba(20, 147, 179, 0.2);
     }
-  }
-
-  .magiccake > img:hover {
-    content: url('../../assets/image/works/magicCake3.png');
-  }
-  .best-city > img:hover {
-    content: url('../../assets/image/works/bestcityguide2.png');
-  }
-  .mockprofile > img:hover {
-    content: url('../../assets/image/works/mockprofile2.png');
-  }
-  .apifetch > img:hover {
-    content: url('../../assets/image/works/apifetchjs2.png');
+    > .altP {
+      width: 100%;
+      margin: 0 auto;
+      height: 20%;
+      position: absolute;
+      bottom: 0;
+      //left: 1em;
+      //padding: 0.25em 0;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: rgba(255, 255, 255, 0.85);
+      border-radius: 0 0 7px 7px;
+      > p {
+        margin: 0 auto;
+        font-size: smaller;
+        text-align: justify;
+        line-height: 1.15;
+        padding: 0.25em 0.5em;
+      }
+    }
   }
 }

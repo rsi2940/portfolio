@@ -47,6 +47,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 .name {
   display: inline-block;
@@ -72,6 +73,8 @@ h1:hover {
 }
 
 .content-wrapper {
+  position: static;
+  z-index: -1;
   margin-top: 1.5em;
   overflow: auto;
   border-radius: 7px;
@@ -103,9 +106,9 @@ ul li {
     margin: 0 auto 8em auto;
     grid-area: cw;
   }
-  .social-links {
-    display: none;
-  }
+  // .social-links {
+  //   display: none;
+  // }
   app-profile {
     // display: initial;
     grid-area: s;

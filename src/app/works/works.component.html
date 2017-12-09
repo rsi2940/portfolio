@@ -3,58 +3,137 @@
 
   <div class="portfolio">
     <div class="magiccake">
-      <img src="../../assets/image/works/magiccake2.png"
-           alt=""
-           srcset="">
-    </div> this is a basic html css learning
+      <img [src]="magiccake"
+           [alt]="magiccakeAlt"
+           (mouseover)="magiccakeCh()"
+           (mouseout)="setUrl()">
+      <div class="altP">
+        <p>
+          {{magiccakeAlt}}
+        </p>
+      </div>
+
+    </div>
+
   </div>
   <div class="portfolio">
     <div class="best-city">
-      <img src="../../assets/image/works/bestcityguide.png"
-           alt=""
-           srcset="">
+      <img [src]="bestcityguide"
+           [alt]="bestcityguideAlt"
+           (mouseover)="bestcityguideCh()"
+           (mouseout)="setUrl()">
+      <div class="altP">
+        <p>
+          {{bestcityguideAlt}}
+        </p>
+      </div>
+
     </div>
+
   </div>
   <div class="portfolio">
     <div class="mockprofile">
-      <img src="../../assets/image/works/mockprofile.png"
-           alt=""
-           srcset="">
+      <img [src]="mockprofile"
+           [alt]="mockprofileAlt"
+           (mouseover)="mockprofileCh()"
+           (mouseout)="setUrl()">
+      <div class="altP">
+        <p>
+          {{mockprofileAlt}}
+        </p>
+      </div>
+
     </div>
+
   </div>
   <div class="portfolio">
     <div class="layout-tech">
-      <img src="../../assets/image/works/responsivedesign.png"
-           alt=""
-           srcset="">
+      <img [src]="layouttech"
+           [alt]="layouttechAlt"
+           (mouseover)="layouttechCh()"
+           (mouseout)="setUrl()">
+      <div class="altP">
+        <p>
+          {{layouttechAlt}}
+        </p>
+
+      </div>
     </div>
+
   </div>
   <div class="portfolio">
     <div class="jsdom">
-      <img src="../../assets/image/works/jsdom.png"
-           alt=""
-           srcset="">
+      <img [src]="jsdom"
+           [alt]="jsdomAlt"
+           (mouseover)="jsdomCh()"
+           (mouseout)="setUrl()">
+      <div class="altP">
+        <p>
+          {{jsdomAlt}}
+        </p>
+      </div>
+
     </div>
+
   </div>
   <div class="portfolio">
     <div class="jsdrumkit">
-      <img src="../../assets/image/works/jsdrumkit.png"
-           alt=""
-           srcset="">
+      <img [src]="jsdrumkit"
+           [alt]="jsdrumkitAlt"
+           (mouseover)="jsdrumkitCh()"
+           (mouseout)="setUrl()">
+      <div class="altP">
+        <p>
+          {{jsdrumkitAlt}}
+        </p>
+      </div>
+
     </div>
+
   </div>
   <div class="portfolio">
     <div class="catclick">
-      <img src="../../assets/image/works/catclickermvo.png"
-           alt=""
-           srcset="">
+      <img [src]="catclick"
+           [alt]="catclickAlt"
+           (mouseover)="catclickCh()"
+           (mouseout)="setUrl()">
+      <div class="altP">
+        <p>
+          {{catclickAlt}}
+        </p>
+      </div>
+
     </div>
+
   </div>
   <div class="portfolio">
     <div class="apifetch">
-      <img src="../../assets/image/works/apifetchjs.png"
-           alt=""
-           srcset="">
+      <img [src]="apifetch"
+           [alt]="apifetchAlt"
+           (mouseover)="apifetchCh()"
+           (mouseout)="setUrl()">
+      <div class="altP">
+        <p>
+          {{apifetchAlt}}
+        </p>
+      </div>
+
     </div>
+
+  </div>
+  <div class="portfolio">
+    <div class="lightbox">
+      <img [src]="lightbox"
+           [alt]="lightboxAlt"
+           (mouseover)="lightboxCh()"
+           (mouseout)="setUrl()">
+      <div class="altP">
+        <p>
+          {{lightboxAlt}}
+        </p>
+      </div>
+
+    </div>
+
   </div>
 </div>

@@ -1,16 +1,23 @@
 <div class="container">
 
   <header>
-    <a routerLink="/aboutme">
+    <a routerLink="/aboutme"
+       (click)="aboutClicked()">
       <h1 class="name">Rishi Khatiwada</h1>
     </a>
     <nav>
       <a class="aboutme"
-         routerLink="/aboutme">about me</a>
+         routerLink="/aboutme"
+         (click)="aboutClicked()"
+         [ngClass]="{changeMe:aboutClick}">about me</a>
       <a class="works"
-         routerLink="/works">works</a>
+         routerLink="/works"
+         (click)="worksClicked()"
+         [ngClass]="{changeMe:worksClick}">works</a>
       <a class="contactme"
-         routerLink="/contact">contact me</a>
+         routerLink="/contact"
+         (click)="contactClicked()"
+         [ngClass]="{changeMe:contactClick}">contact me</a>
     </nav>
   </header>
   <div class="content-wrapper">

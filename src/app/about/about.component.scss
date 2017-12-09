@@ -4,13 +4,14 @@
   line-height: 2em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  //grid-template-rows: max-content;
-
   grid-template-rows: max-content 1fr;
-
   grid-template-areas:
     '. ap ap ap ap ap ap ap ap ap ap .'
     'p p p p p p p p p p p p';
+
+  app-profile {
+    grid-area: ap;
+  }
 
   @media (min-width: 960px) {
     grid-template-areas: ' . ap  . p p p p p p p p p';
@@ -22,11 +23,36 @@
       margin-top: 5em;
     }
   }
+  > .ptags {
+    grid-area: p;
+    text-align: justify;
+  }
 }
-.ro > .ptags {
-  grid-area: p;
-  text-align: justify;
+
+ul.skills {
+  padding: 0;
+  //text-align: center;
+  transition: all 1s ease;
 }
-app-profile {
-  grid-area: ap;
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: rgba(255, 125, 0, 0.9);
+  color: #fff;
+  padding: 0.25em 1em;
+  margin-bottom: 0.2em;
+}
+
+.skills li:nth-child(odd) {
+  background: rgb(3, 153, 255);
+}
+.more {
+  > p {
+    text-decoration: underline;
+    color: blueviolet;
+  }
+  > p:hover {
+    cursor: pointer;
+  }
 }

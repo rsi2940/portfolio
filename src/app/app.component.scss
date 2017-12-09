@@ -1,6 +1,11 @@
 .container {
   margin: 0 auto;
 }
+.changeMe {
+  // text-decoration: underline;
+  color: blueviolet;
+  //font-weight: 500;
+}
 h1 {
   font-size: 1.25em;
 }
@@ -9,8 +14,9 @@ section.profile {
 }
 
 header {
-  width: 100vw;
+  //width: 95vw;
   margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   background-image: url('../assets/image/bg.png');
   position: sticky;
   top: 0;

@@ -4,13 +4,16 @@
   //margin: 1em 0.5em;
   display: flex;
   width: 90vw;
-  padding-top: 2.25em;
+  //padding-top: 2.25em;
   padding-bottom: 0.25em;
   margin: 0 auto;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   > .portfolio {
     padding: 0.5em;
+  }
+  @media (min-width: 960px) {
+    justify-content: space-between;
   }
 }
 

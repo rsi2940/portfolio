@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, transition } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  aboutClick: boolean;
+  worksClick: boolean;
+  contactClick: boolean;
+
+  constructor() {}
+
+  aboutClicked() {
+    this.aboutClick = true;
+    this.worksClick = false;
+    this.contactClick = false;
+  }
+  worksClicked() {
+    this.aboutClick = false;
+    this.worksClick = true;
+    this.contactClick = false;
+  }
+  contactClicked() {
+    this.aboutClick = false;
+    this.worksClick = false;
+    this.contactClick = true;
+  }
 }

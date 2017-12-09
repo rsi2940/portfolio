@@ -13,6 +13,24 @@
       too, however, Angular with Firebase is my goal that I am currently acquiring knowledge at Monroe Community College.
     </p>
     <p>I am always eager to learn new technology and believe in professional growth.</p>
-
+    <div class="more">
+      <p (click)="clickMore()">{{moreText}}</p>
+      <div *ngIf="showMore"
+           class="skills">
+        <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Angular</li>
+          <li>Firebase</li>
+          <li>NoSQL</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>and More...</li>
+        </ul>
+      </div>
+    </div>
   </div>
+
 </div>

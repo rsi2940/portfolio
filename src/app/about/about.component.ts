@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  showMore: boolean;
+  moreText: string;
+  constructor() {
+    this.showMore = false;
+    this.moreText = 'show more +';
   }
 
+  ngOnInit() {}
+
+  clickMore() {
+    this.showMore = !this.showMore;
+    this.moreText = this.showMore ? 'show less -' : 'show more +';
+  }
 }

@@ -2,11 +2,12 @@
   width: 50vw;
   padding: 0 1em;
   line-height: 2;
-  margin: calc(25vh/8) auto 0 auto;
+  margin: calc(25vh/10) auto 0 auto;
   display: grid;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
   div {
     display: grid;
     margin-top: 1em;
@@ -17,6 +18,8 @@
       background: transparent;
       border: 1px solid rgba(255, 125, 0, 0.5);
       outline: none;
+      color: #3f3844;
+      //font-size: 1.15rem;
     }
     textarea {
       height: 80px;

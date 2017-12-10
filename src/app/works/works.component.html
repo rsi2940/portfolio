@@ -1,139 +1,175 @@
-<!-- <pre><strong>My Works</strong></pre> -->
+<!--  -->
+<pre><strong>Select Category: </strong>
+<select (change)="select($event)"
+        name="options"
+        id="options">
+  <option value="all">ALL</option>
+  <option value="hc">HTML/CSS </option>
+  <option value="js">JAVASCRIPT</option>
+  <option value="wp">WORDPRESS</option>
+</select></pre>
 <div class="container">
 
-  <div class="portfolio">
-    <div class="magiccake">
-      <img [src]="magiccake"
-           [alt]="magiccakeAlt"
-           (mouseover)="magiccakeCh()"
-           (mouseout)="setUrl()">
-      <div class="altP">
-        <p>
-          {{magiccakeAlt}}
-        </p>
+  <div *ngIf="htmlcss"
+       class="portfolio">
+    <a href="">
+      <div class="magiccake">
+        <img [src]="magiccake"
+             [alt]="magiccakeAlt"
+             (mouseover)="magiccakeCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{magiccakeAlt}}
+          </p>
+        </div>
       </div>
-
-    </div>
-
+    </a>
   </div>
-  <div class="portfolio">
-    <div class="best-city">
-      <img [src]="bestcityguide"
-           [alt]="bestcityguideAlt"
-           (mouseover)="bestcityguideCh()"
-           (mouseout)="setUrl()">
-      <div class="altP">
-        <p>
-          {{bestcityguideAlt}}
-        </p>
+  <div *ngIf="htmlcss"
+       class="portfolio">
+    <a href="">
+      <div class="best-city">
+        <img [src]="bestcityguide"
+             [alt]="bestcityguideAlt"
+             (mouseover)="bestcityguideCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{bestcityguideAlt}}
+          </p>
+        </div>
       </div>
-
-    </div>
-
+    </a>
   </div>
-  <div class="portfolio">
-    <div class="mockprofile">
-      <img [src]="mockprofile"
-           [alt]="mockprofileAlt"
-           (mouseover)="mockprofileCh()"
-           (mouseout)="setUrl()">
-      <div class="altP">
-        <p>
-          {{mockprofileAlt}}
-        </p>
+  <div *ngIf="htmlcss"
+       class="portfolio">
+    <a href="">
+      <div class="mockprofile">
+        <img [src]="mockprofile"
+             [alt]="mockprofileAlt"
+             (mouseover)="mockprofileCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{mockprofileAlt}}
+          </p>
+        </div>
       </div>
-
-    </div>
-
+    </a>
   </div>
-  <div class="portfolio">
-    <div class="layout-tech">
-      <img [src]="layouttech"
-           [alt]="layouttechAlt"
-           (mouseover)="layouttechCh()"
-           (mouseout)="setUrl()">
-      <div class="altP">
-        <p>
-          {{layouttechAlt}}
-        </p>
-
+  <div *ngIf="htmlcss"
+       class="portfolio">
+    <a href="">
+      <div class="layout-tech">
+        <img [src]="layouttech"
+             [alt]="layouttechAlt"
+             (mouseover)="layouttechCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{layouttechAlt}}
+          </p>
+        </div>
       </div>
-    </div>
-
+    </a>
   </div>
-  <div class="portfolio">
-    <div class="jsdom">
-      <img [src]="jsdom"
-           [alt]="jsdomAlt"
-           (mouseover)="jsdomCh()"
-           (mouseout)="setUrl()">
-      <div class="altP">
-        <p>
-          {{jsdomAlt}}
-        </p>
+  <div *ngIf="js"
+       class="portfolio">
+    <a href="">
+      <div class="jsdom">
+        <img [src]="jsdom"
+             [alt]="jsdomAlt"
+             (mouseover)="jsdomCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{jsdomAlt}}
+          </p>
+        </div>
       </div>
-
-    </div>
-
+    </a>
   </div>
-  <div class="portfolio">
-    <div class="jsdrumkit">
-      <img [src]="jsdrumkit"
-           [alt]="jsdrumkitAlt"
-           (mouseover)="jsdrumkitCh()"
-           (mouseout)="setUrl()">
-      <div class="altP">
-        <p>
-          {{jsdrumkitAlt}}
-        </p>
+  <div *ngIf="js"
+       class="portfolio">
+    <a href="">
+      <div class="jsdrumkit">
+        <img [src]="jsdrumkit"
+             [alt]="jsdrumkitAlt"
+             (mouseover)="jsdrumkitCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{jsdrumkitAlt}}
+          </p>
+        </div>
       </div>
-
-    </div>
-
+    </a>
   </div>
-  <div class="portfolio">
-    <div class="catclick">
-      <img [src]="catclick"
-           [alt]="catclickAlt"
-           (mouseover)="catclickCh()"
-           (mouseout)="setUrl()">
-      <div class="altP">
-        <p>
-          {{catclickAlt}}
-        </p>
+  <div *ngIf="js"
+       class="portfolio">
+    <a href="">
+      <div class="catclick">
+        <img [src]="catclick"
+             [alt]="catclickAlt"
+             (mouseover)="catclickCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{catclickAlt}}
+          </p>
+        </div>
       </div>
-
-    </div>
-
+    </a>
   </div>
-  <div class="portfolio">
-    <div class="apifetch">
-      <img [src]="apifetch"
-           [alt]="apifetchAlt"
-           (mouseover)="apifetchCh()"
-           (mouseout)="setUrl()">
-      <div class="altP">
-        <p>
-          {{apifetchAlt}}
-        </p>
+  <div *ngIf="js"
+       class="portfolio">
+    <a href="">
+      <div class="apifetch">
+        <img [src]="apifetch"
+             [alt]="apifetchAlt"
+             (mouseover)="apifetchCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{apifetchAlt}}
+          </p>
+        </div>
       </div>
-
-    </div>
-
+    </a>
   </div>
-  <div class="portfolio">
-    <div class="lightbox">
-      <img [src]="lightbox"
-           [alt]="lightboxAlt"
-           (mouseover)="lightboxCh()"
-           (mouseout)="setUrl()">
-      <div class="altP">
-        <p>
-          {{lightboxAlt}}
-        </p>
+  <div *ngIf="js"
+       class="portfolio">
+    <a href="">
+      <div class="lightbox">
+        <img [src]="lightbox"
+             [alt]="lightboxAlt"
+             (mouseover)="lightboxCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{lightboxAlt}}
+          </p>
+        </div>
       </div>
-
-    </div>
-
+    </a>
   </div>
+
+  <div *ngIf="wordpress"
+       class="portfolio">
+    <a href="">
+      <div class="dadsprofile">
+        <img [src]="dadsprofile"
+             [alt]="dadsprofileAlt"
+             (mouseover)="dadsprofileCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{dadsprofileAlt}}
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+
 </div>

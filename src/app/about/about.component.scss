@@ -14,6 +14,7 @@
   }
 
   @media (min-width: 960px) {
+    width: 90%;
     grid-template-areas: ' . ap  . p p p p p p p p p';
 
     > .ptags {
@@ -23,6 +24,10 @@
       margin-top: 5em;
     }
   }
+  @media (min-width: 1440px) {
+    width: 70%;
+  }
+
   > .ptags {
     grid-area: p;
     text-align: justify;

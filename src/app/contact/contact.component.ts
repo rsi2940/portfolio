@@ -11,11 +11,23 @@ export class ContactComponent implements OnInit {
   clientEmail: string;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.onCancel();
+  }
   onCancel() {
-    console.log(this.clientEmail);
     this.clientEmail = '';
     this.clientMessage = '';
     this.clientName = '';
+  }
+  onSubmit() {
+    if (!this.clientName) {
+      this.clientName = '** required **';
+    }
+    if (!this.clientMessage) {
+      this.clientMessage = '** required **';
+    }
+    if (!this.clientEmail) {
+      this.clientEmail = '** required **';
+    }
   }
 }

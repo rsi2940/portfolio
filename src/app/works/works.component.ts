@@ -15,6 +15,7 @@ export class WorksComponent implements OnInit {
   catclick: string;
   apifetch: string;
   lightbox: string;
+  dadsprofile: string;
 
   magiccakeAlt: string;
   mockprofileAlt: string;
@@ -25,11 +26,40 @@ export class WorksComponent implements OnInit {
   catclickAlt: string;
   apifetchAlt: string;
   lightboxAlt: string;
+  dadsprofileAlt: string;
+
+  // selection: string;
+
+  htmlcss: boolean;
+  js: boolean;
+  wordpress: boolean;
+
   constructor() {}
 
   ngOnInit() {
     this.setUrl();
     this.setAlt();
+    this.setAll();
+  }
+  setAll() {
+    this.htmlcss = true;
+    this.js = true;
+    this.wordpress = true;
+  }
+  setHC() {
+    this.htmlcss = true;
+    this.js = false;
+    this.wordpress = false;
+  }
+  setJS() {
+    this.htmlcss = false;
+    this.js = true;
+    this.wordpress = false;
+  }
+  setWP() {
+    this.htmlcss = false;
+    this.js = false;
+    this.wordpress = true;
   }
   setUrl() {
     this.magiccake = '../../assets/image/works/magiccake.bmp';
@@ -41,6 +71,7 @@ export class WorksComponent implements OnInit {
     this.catclick = '../../assets/image/works/catclickermvo.png';
     this.apifetch = '../../assets/image/works/apifetchjs.png';
     this.lightbox = '../../assets/image/works/lightbox.png';
+    this.dadsprofile = '../../assets/image/works/keshavattri.png';
   }
   setAlt() {
     this.magiccakeAlt =
@@ -61,6 +92,8 @@ export class WorksComponent implements OnInit {
       'Learning API fetch; async await. Star Wars api fetch, listing all films and its details.';
     this.lightboxAlt =
       'One page application displaying gallery of photographs and implementation of live search light box';
+    this.dadsprofileAlt =
+      'This is a profile website (in Nepali Language) of Swami Keshav Attri, build in WordPress.';
   }
 
   magiccakeCh() {
@@ -89,5 +122,22 @@ export class WorksComponent implements OnInit {
   }
   lightboxCh() {
     this.lightbox = '../../assets/image/works/lightbox2.png';
+  }
+  dadsprofileCh() {
+    this.dadsprofile = '../../assets/image/works/keshavattri2.png';
+  }
+
+  select(selection) {
+    selection = selection.target.value;
+    if (selection === 'all') {
+      this.setAll();
+    } else if (selection === 'hc') {
+      this.setHC();
+    } else if (selection === 'js') {
+      this.setJS();
+    } else if (selection === 'wp') {
+      this.setWP();
+    }
+    // console.log(selection.target.value);
   }
 }

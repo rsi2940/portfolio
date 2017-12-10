@@ -45,6 +45,10 @@ h1:hover {
   background: rgb(3, 153, 255);
   border-radius: 7px;
 }
+app-footer {
+  // grid-area: sl;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
 
 .content-wrapper {
   position: static;
@@ -65,11 +69,12 @@ ul li {
 @media (min-width: 960px) {
   app-footer {
     // grid-area: sl;
+
     display: block;
     width: 100vw;
     text-align: center;
     margin: 0 auto;
-    border-radius: 10px;
+    //border-radius: 10px;
     background-image: url('../assets/image/bg.png');
     grid-area: f;
     //color: rgba(255, 255, 255, 0.8);

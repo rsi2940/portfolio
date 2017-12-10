@@ -5,24 +5,21 @@
     <input type="text"
            id="name"
            [(ngModel)]="clientName"
-           autofocus=true
-           required>
+           autofocus=true>
   </div>
 
   <div class="email">
     <label for="email">Email*:</label>
     <input [(ngModel)]="clientEmail"
            type="email"
-           id="email"
-           required>
+           id="email">
   </div>
 
   <div class="message">
     <label for="message">Message*:</label>
     <textarea name="message"
               id="message"
-              [(ngModel)]="clientMessage"
-              required></textarea>
+              [(ngModel)]="clientMessage"></textarea>
   </div>
 
   <div class="buttons">
@@ -32,5 +29,9 @@
     <input type="button"
            value="cancel"
            (click)="onCancel()">
+  </div>
+  <div *ngIf="success"
+       class="success">
+    <p>Message sent Successfully!!</p>
   </div>
 </div>

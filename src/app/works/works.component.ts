@@ -16,6 +16,7 @@ export class WorksComponent implements OnInit {
   apifetch: string;
   lightbox: string;
   dadsprofile: string;
+  kirat: string;
 
   magiccakeAlt: string;
   mockprofileAlt: string;
@@ -27,12 +28,14 @@ export class WorksComponent implements OnInit {
   apifetchAlt: string;
   lightboxAlt: string;
   dadsprofileAlt: string;
+  kiratAlt: string;
 
   // selection: string;
 
   htmlcss: boolean;
   js: boolean;
   wordpress: boolean;
+  phpmysql: boolean;
 
   constructor() {}
 
@@ -45,21 +48,31 @@ export class WorksComponent implements OnInit {
     this.htmlcss = true;
     this.js = true;
     this.wordpress = true;
+    this.phpmysql = true;
   }
   setHC() {
     this.htmlcss = true;
     this.js = false;
     this.wordpress = false;
+    this.phpmysql = false;
   }
   setJS() {
     this.htmlcss = false;
     this.js = true;
     this.wordpress = false;
+    this.phpmysql = false;
   }
   setWP() {
     this.htmlcss = false;
     this.js = false;
     this.wordpress = true;
+    this.phpmysql = false;
+  }
+  setPSql() {
+    this.htmlcss = false;
+    this.js = false;
+    this.wordpress = true;
+    this.phpmysql = true;
   }
   setUrl() {
     this.magiccake = '../../assets/image/works/magiccake.bmp';
@@ -72,6 +85,7 @@ export class WorksComponent implements OnInit {
     this.apifetch = '../../assets/image/works/apifetchjs.png';
     this.lightbox = '../../assets/image/works/lightbox.png';
     this.dadsprofile = '../../assets/image/works/keshavattri.png';
+    this.kirat = '../../assets/image/works/phpmysql.png';
   }
   setAlt() {
     this.magiccakeAlt =
@@ -93,7 +107,9 @@ export class WorksComponent implements OnInit {
     this.lightboxAlt =
       'One page application displaying gallery of photographs and implementation of live search light box';
     this.dadsprofileAlt =
-      'This is a profile website (in Nepali Language) of Swami Keshav Attri, build in WordPress.';
+      'A profile website (in Nepali language) of Swami Keshav Attri, build in WordPress using A SiteOrigin Theme. "Voluntarily developed"';
+    this.kiratAlt =
+      'Mock data of a PHP / MySql based web app on a local server for a non profit organization. "Voluntarily developed"';
   }
 
   magiccakeCh() {
@@ -126,6 +142,9 @@ export class WorksComponent implements OnInit {
   dadsprofileCh() {
     this.dadsprofile = '../../assets/image/works/keshavattri2.png';
   }
+  kiratCh() {
+    this.kirat = '../../assets/image/works/phpmysql2.png';
+  }
 
   select(selection) {
     selection = selection.target.value;
@@ -137,6 +156,8 @@ export class WorksComponent implements OnInit {
       this.setJS();
     } else if (selection === 'wp') {
       this.setWP();
+    } else if (selection === 'psql') {
+      this.setPSql();
     }
     // console.log(selection.target.value);
   }

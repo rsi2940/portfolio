@@ -3,10 +3,11 @@
 <select (change)="select($event)"
         name="options"
         id="options">
-  <option value="all">ALL</option>
+  <option value="all">All</option>
   <option value="hc">HTML/CSS </option>
-  <option value="js">JAVASCRIPT</option>
-  <option value="wp">WORDPRESS</option>
+  <option value="js">JavaScript</option>
+  <option value="wp">WordPress</option>
+  <option value="psql">PHP/MySQL</option>
 </select></pre>
 <div class="container">
 
@@ -166,6 +167,23 @@
         <div class="altP">
           <p>
             {{dadsprofileAlt}}
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div *ngIf="phpmysql"
+       class="portfolio">
+    <a>
+      <div class="kirat">
+        <img [src]="kirat"
+             [alt]="kiratAlt"
+             (mouseover)="kiratCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{kiratAlt}}
           </p>
         </div>
       </div>

@@ -14,7 +14,8 @@
     </p>
     <p>I am always eager to learn new technology and believe in professional growth.</p>
     <div class="more">
-      <p (click)="clickMore()">{{moreText}}</p>
+      <p (click)="clickMore()"
+         [title]="titleText">{{moreText}}</p>
       <div *ngIf="showMore"
            class="skills">
         <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>

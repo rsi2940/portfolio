@@ -53,8 +53,13 @@ ul.skills {
   background: rgb(3, 153, 255);
 }
 .more {
+  display: inline;
+  margin: 0;
+  padding: 0;
   > p {
-    text-decoration: underline;
+    font-size: 3em;
+    display: inherit;
+    //text-decoration: underline;
     color: blueviolet;
   }
   > p:hover {

@@ -7,16 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   showMore: boolean;
+  titleText: string;
   moreText: string;
   constructor() {
     this.showMore = false;
-    this.moreText = 'show more +';
+    this.titleText = 'click to show more';
+    this.moreText = '+';
   }
 
   ngOnInit() {}
 
   clickMore() {
     this.showMore = !this.showMore;
-    this.moreText = this.showMore ? 'show less -' : 'show more +';
+    this.titleText = this.showMore ? 'chick to hide' : 'click to show more';
+    this.moreText = this.showMore ? '-' : '+';
   }
 }

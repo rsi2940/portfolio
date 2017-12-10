@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { WorksComponent } from './works/works.component';
 import { AboutComponent } from './about/about.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProfileComponent } from './profile/profile.component';
     ContactComponent,
     WorksComponent,
     AboutComponent,
-    ProfileComponent
+    ProfileComponent,
+    SocialLinksComponent
   ],
   imports: [FormsModule, BrowserModule, AppRoutingModule],
   providers: [],

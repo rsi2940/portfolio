@@ -1,11 +1,7 @@
 .container {
   margin: 0 auto;
 }
-.changeMe {
-  // text-decoration: underline;
-  color: blueviolet;
-  //font-weight: 500;
-}
+
 h1 {
   font-size: 1.25em;
 }
@@ -33,6 +29,9 @@ header > nav {
   display: grid;
   grid-template-columns: max-content max-content max-content;
   justify-content: space-around;
+  .active {
+    color: blueviolet;
+  }
 }
 nav > a {
   padding: 0.25em 0.5em;

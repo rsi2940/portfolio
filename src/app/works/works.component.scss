@@ -9,8 +9,8 @@
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: center;
-  > .portfolio {
-    //padding: 0.5em;
+  > div {
+    padding-top: 0.5rem;
   }
 
   @media (min-width: 960px) {

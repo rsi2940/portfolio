@@ -2,22 +2,19 @@
 
   <header>
     <a routerLink="/aboutme"
-       (click)="aboutClicked()">
+       routerLinkActive="active">
       <h1 class="name">Rishi Khatiwada</h1>
     </a>
     <nav>
       <a class="aboutme"
          routerLink="/aboutme"
-         (click)="aboutClicked()"
-         [ngClass]="{changeMe:aboutClick}">about me</a>
+         routerLinkActive="active">about me</a>
       <a class="works"
          routerLink="/works"
-         (click)="worksClicked()"
-         [ngClass]="{changeMe:worksClick}">works</a>
+         routerLinkActive="active">works</a>
       <a class="contactme"
          routerLink="/contact"
-         (click)="contactClicked()"
-         [ngClass]="{changeMe:contactClick}">contact me</a>
+         routerLinkActive="active">contact me</a>
     </nav>
   </header>
   <div class="content-wrapper">

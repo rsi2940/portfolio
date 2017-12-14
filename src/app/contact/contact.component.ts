@@ -26,7 +26,7 @@ export class ContactComponent implements OnInit {
     this.ce = false;
     this.cn = false;
     this.cm = false;
-    console.log(this.cm);
+    // console.log(this.cm);
   }
   onSubmit() {
     this.clientEmail = this.clientEmail.trim();

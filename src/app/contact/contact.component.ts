@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   clientName: string;
+  nameErr: string;
   clientMessage: string;
+  messageErr: string;
   clientEmail: string;
+  emailErr: string;
   success: boolean;
   cm: boolean;
   ce: boolean;
@@ -22,6 +25,9 @@ export class ContactComponent implements OnInit {
     this.clientEmail = '';
     this.clientMessage = '';
     this.clientName = '';
+    this.emailErr = '';
+    this.messageErr = '';
+    this.nameErr = '';
     this.success = false;
     this.ce = false;
     this.cn = false;
@@ -33,28 +39,28 @@ export class ContactComponent implements OnInit {
     this.clientMessage = this.clientMessage.trim();
     this.clientName = this.clientName.trim();
 
-    if (!this.clientName || this.clientName === '** required **') {
-      this.clientName = '** required **';
+    if (!this.clientName) {
+      this.nameErr = '** required **';
       this.cn = false;
     } else {
       this.cn = true;
     }
-    if (!this.clientMessage || this.clientMessage === '** required **') {
-      this.clientMessage = '** required **';
+    if (!this.clientMessage) {
+      this.messageErr = '** required **';
       this.cm = false;
       // console.log(this.cm + 'if');
     } else {
       this.cm = true;
       console.log(this.cm);
     }
-    if (!this.clientEmail || this.clientEmail === '** required **') {
-      this.clientEmail = '** required **';
+    if (!this.clientEmail) {
+      this.emailErr = '** required **';
       this.ce = false;
     } else {
       this.ce = true;
     }
     if (!this.clientEmail.includes('@')) {
-      this.clientEmail = '** must be an Email **';
+      this.emailErr = '** must be an Email **';
       this.ce = false;
     } else {
       this.ce = true;

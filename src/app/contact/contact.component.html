@@ -5,21 +5,24 @@
     <input type="text"
            id="name"
            [(ngModel)]="clientName"
-           autofocus=true>
+           autofocus=true
+           [placeholder]="nameErr">
   </div>
 
   <div class="email">
     <label for="email">Email*:</label>
     <input [(ngModel)]="clientEmail"
            type="email"
-           id="email">
+           id="email"
+           [placeholder]="emailErr">
   </div>
 
   <div class="message">
     <label for="message">Message*:</label>
     <textarea name="message"
               id="message"
-              [(ngModel)]="clientMessage"></textarea>
+              [(ngModel)]="clientMessage"
+              [placeholder]="messageErr"></textarea>
   </div>
 
   <div class="buttons">

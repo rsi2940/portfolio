@@ -8,172 +8,46 @@
   <option value="js">JavaScript</option>
   <option value="wp">WordPress</option>
   <option value="psql">PHP/MySQL</option>
+  <option value="angular">Angular</option>
 </select></pre>
 <div class="container">
-
-  <div *ngIf="htmlcss"
+  <!-- work -->
+  <div *ngIf="angular"
        class="portfolio">
-    <a title="learning basic html/css"
+    <a title="This is an Angular application hosted on firebase hosting using cloud firestore as database."
        target="_blank"
-       href="https://rsi2940.github.io/magic-cake/">
-      <div class="magiccake">
-        <img [src]="magiccake"
-             [alt]="magiccakeAlt"
-             (mouseover)="magiccakeCh()"
+       href="https://rsi-calander.firebaseapp.com/">
+      <div class="angularAppointment">
+        <img [src]="angularAppointment"
+             [alt]="angularAppointmentAlt"
+             (mouseover)="angularAppointmentCh()"
              (mouseout)="setUrl()">
         <div class="altP">
           <p>
-            {{magiccakeAlt}}
+            {{angularAppointmentAlt}}
           </p>
         </div>
       </div>
     </a>
   </div>
-  <div *ngIf="htmlcss"
+  <!-- work -->
+  <div *ngIf="phpmysql"
        class="portfolio">
-    <a title="learning responsive design using flexbox"
-       target="_blank"
-       href="https://rsi2940.github.io/layout-techniques/">
-      <div class="best-city">
-        <img [src]="bestcityguide"
-             [alt]="bestcityguideAlt"
-             (mouseover)="bestcityguideCh()"
+    <a title="It is local server based web app. Voluntarily build">
+      <div class="kirat">
+        <img [src]="kirat"
+             [alt]="kiratAlt"
+             (mouseover)="kiratCh()"
              (mouseout)="setUrl()">
         <div class="altP">
           <p>
-            {{bestcityguideAlt}}
+            {{kiratAlt}}
           </p>
         </div>
       </div>
     </a>
   </div>
-  <div *ngIf="htmlcss"
-       class="portfolio">
-    <a title="assignment; started with mockup design"
-       target="_blank"
-       href="https://rsi2940.github.io/nabinProfile/">
-      <div class="mockprofile">
-        <img [src]="mockprofile"
-             [alt]="mockprofileAlt"
-             (mouseover)="mockprofileCh()"
-             (mouseout)="setUrl()">
-        <div class="altP">
-          <p>
-            {{mockprofileAlt}}
-          </p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div *ngIf="htmlcss"
-       class="portfolio">
-    <a title="assignment; using flexbox"
-       target="_blank"
-       href="https://rsi2940.github.io/mccSecondProject-responsive/">
-      <div class="layout-tech">
-        <img [src]="layouttech"
-             [alt]="layouttechAlt"
-             (mouseover)="layouttechCh()"
-             (mouseout)="setUrl()">
-        <div class="altP">
-          <p>
-            {{layouttechAlt}}
-          </p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div *ngIf="js"
-       class="portfolio">
-    <a title="learning dom manipulation"
-       target="_blank"
-       href="https://rsi2940.github.io/dom-manipulation/">
-      <div class="jsdom">
-        <img [src]="jsdom"
-             [alt]="jsdomAlt"
-             (mouseover)="jsdomCh()"
-             (mouseout)="setUrl()">
-        <div class="altP">
-          <p>
-            {{jsdomAlt}}
-          </p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div *ngIf="js"
-       class="portfolio">
-    <a title="learning eventhandler"
-       target="_blank"
-       href="https://rsi2940.github.io/drumkit/">
-      <div class="jsdrumkit">
-        <img [src]="jsdrumkit"
-             [alt]="jsdrumkitAlt"
-             (mouseover)="jsdrumkitCh()"
-             (mouseout)="setUrl()">
-        <div class="altP">
-          <p>
-            {{jsdrumkitAlt}}
-          </p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div *ngIf="js"
-       class="portfolio">
-    <a title="assignment: vanilla JS as MVC"
-       target="_blank"
-       href="https://rsi2940.github.io/catclicker/">
-      <div class="catclick">
-        <img [src]="catclick"
-             [alt]="catclickAlt"
-             (mouseover)="catclickCh()"
-             (mouseout)="setUrl()">
-        <div class="altP">
-          <p>
-            {{catclickAlt}}
-          </p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div *ngIf="js"
-       class="portfolio">
-    <a title="learning api fetch"
-       target="_blank"
-       href="https://rsi2940.github.io/fetchJS/src/">
-      <div class="apifetch">
-        <img [src]="apifetch"
-             [alt]="apifetchAlt"
-             (mouseover)="apifetchCh()"
-             (mouseout)="setUrl()">
-        <div class="altP">
-          <p>
-            {{apifetchAlt}}
-          </p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div *ngIf="js"
-       class="portfolio">
-    <a title="assignment: lightbox and search"
-       target="_blank"
-       href="https://rsi2940.github.io/lightBoxJS/">
-      <div class="lightbox">
-        <img [src]="lightbox"
-             [alt]="lightboxAlt"
-             (mouseover)="lightboxCh()"
-             (mouseout)="setUrl()">
-        <div class="altP">
-          <p>
-            {{lightboxAlt}}
-          </p>
-        </div>
-      </div>
-    </a>
-  </div>
-
+  <!-- work -->
   <div *ngIf="wordpress"
        class="portfolio">
     <a title="WordPress website. Voluntarily build"
@@ -192,18 +66,172 @@
       </div>
     </a>
   </div>
-
-  <div *ngIf="phpmysql"
+  <!-- work -->
+  <div *ngIf="js"
        class="portfolio">
-    <a title="It is local server based web app. Voluntarily build">
-      <div class="kirat">
-        <img [src]="kirat"
-             [alt]="kiratAlt"
-             (mouseover)="kiratCh()"
+    <a title="assignment: lightbox and search"
+       target="_blank"
+       href="https://rsi2940.github.io/lightBoxJS/">
+      <div class="lightbox">
+        <img [src]="lightbox"
+             [alt]="lightboxAlt"
+             (mouseover)="lightboxCh()"
              (mouseout)="setUrl()">
         <div class="altP">
           <p>
-            {{kiratAlt}}
+            {{lightboxAlt}}
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- work -->
+  <div *ngIf="js"
+       class="portfolio">
+    <a title="learning api fetch"
+       target="_blank"
+       href="https://rsi2940.github.io/fetchJS/src/">
+      <div class="apifetch">
+        <img [src]="apifetch"
+             [alt]="apifetchAlt"
+             (mouseover)="apifetchCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{apifetchAlt}}
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- work -->
+  <div *ngIf="js"
+       class="portfolio">
+    <a title="assignment: vanilla JS as MVC"
+       target="_blank"
+       href="https://rsi2940.github.io/catclicker/">
+      <div class="catclick">
+        <img [src]="catclick"
+             [alt]="catclickAlt"
+             (mouseover)="catclickCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{catclickAlt}}
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- work -->
+  <div *ngIf="js"
+       class="portfolio">
+    <a title="learning eventhandler"
+       target="_blank"
+       href="https://rsi2940.github.io/drumkit/">
+      <div class="jsdrumkit">
+        <img [src]="jsdrumkit"
+             [alt]="jsdrumkitAlt"
+             (mouseover)="jsdrumkitCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{jsdrumkitAlt}}
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- work -->
+  <div *ngIf="js"
+       class="portfolio">
+    <a title="learning dom manipulation"
+       target="_blank"
+       href="https://rsi2940.github.io/dom-manipulation/">
+      <div class="jsdom">
+        <img [src]="jsdom"
+             [alt]="jsdomAlt"
+             (mouseover)="jsdomCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{jsdomAlt}}
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- work -->
+  <div *ngIf="htmlcss"
+       class="portfolio">
+    <a title="assignment; using flexbox"
+       target="_blank"
+       href="https://rsi2940.github.io/mccSecondProject-responsive/">
+      <div class="layout-tech">
+        <img [src]="layouttech"
+             [alt]="layouttechAlt"
+             (mouseover)="layouttechCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{layouttechAlt}}
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- work -->
+  <div *ngIf="htmlcss"
+       class="portfolio">
+    <a title="assignment; started with mockup design"
+       target="_blank"
+       href="https://rsi2940.github.io/nabinProfile/">
+      <div class="mockprofile">
+        <img [src]="mockprofile"
+             [alt]="mockprofileAlt"
+             (mouseover)="mockprofileCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{mockprofileAlt}}
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- work -->
+  <div *ngIf="htmlcss"
+       class="portfolio">
+    <a title="learning responsive design using flexbox"
+       target="_blank"
+       href="https://rsi2940.github.io/layout-techniques/">
+      <div class="best-city">
+        <img [src]="bestcityguide"
+             [alt]="bestcityguideAlt"
+             (mouseover)="bestcityguideCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{bestcityguideAlt}}
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- work -->
+  <div *ngIf="htmlcss"
+       class="portfolio">
+    <a title="learning basic html/css"
+       target="_blank"
+       href="https://rsi2940.github.io/magic-cake/">
+      <div class="magiccake">
+        <img [src]="magiccake"
+             [alt]="magiccakeAlt"
+             (mouseover)="magiccakeCh()"
+             (mouseout)="setUrl()">
+        <div class="altP">
+          <p>
+            {{magiccakeAlt}}
           </p>
         </div>
       </div>

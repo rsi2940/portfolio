@@ -17,7 +17,7 @@ export class WorksComponent implements OnInit {
   lightbox: string;
   dadsprofile: string;
   kirat: string;
-
+  angularAppointment: string;
   magiccakeAlt: string;
   mockprofileAlt: string;
   bestcityguideAlt: string;
@@ -29,6 +29,7 @@ export class WorksComponent implements OnInit {
   lightboxAlt: string;
   dadsprofileAlt: string;
   kiratAlt: string;
+  angularAppointmentAlt: string;
 
   // selection: string;
 
@@ -36,6 +37,7 @@ export class WorksComponent implements OnInit {
   js: boolean;
   wordpress: boolean;
   phpmysql: boolean;
+  angular: boolean;
 
   constructor() {}
 
@@ -49,30 +51,42 @@ export class WorksComponent implements OnInit {
     this.js = true;
     this.wordpress = true;
     this.phpmysql = true;
+    this.angular = true;
   }
   setHC() {
     this.htmlcss = true;
     this.js = false;
     this.wordpress = false;
     this.phpmysql = false;
+    this.angular = false;
   }
   setJS() {
     this.htmlcss = false;
     this.js = true;
     this.wordpress = false;
     this.phpmysql = false;
+    this.angular = false;
   }
   setWP() {
     this.htmlcss = false;
     this.js = false;
     this.wordpress = true;
     this.phpmysql = false;
+    this.angular = false;
   }
   setPSql() {
     this.htmlcss = false;
     this.js = false;
     this.wordpress = true;
     this.phpmysql = true;
+    this.angular = false;
+  }
+  setng() {
+    this.htmlcss = false;
+    this.js = false;
+    this.wordpress = false;
+    this.phpmysql = false;
+    this.angular = true;
   }
   setUrl() {
     this.magiccake = '../../assets/image/works/magiccake.bmp';
@@ -86,6 +100,7 @@ export class WorksComponent implements OnInit {
     this.lightbox = '../../assets/image/works/lightbox.png';
     this.dadsprofile = '../../assets/image/works/keshavattri.png';
     this.kirat = '../../assets/image/works/phpmysql.png';
+    this.angularAppointment = '../../assets/image/works/appointmentapp2.png';
   }
   setAlt() {
     this.magiccakeAlt =
@@ -110,6 +125,9 @@ export class WorksComponent implements OnInit {
       'A profile website (in Nepali language) of Swami Keshav Attri, build in WordPress using A SiteOrigin Theme. "Voluntarily developed"';
     this.kiratAlt =
       'Mock data of a PHP / MySql based web app on a local server for a non profit organization. "Voluntarily developed"';
+    this.angularAppointmentAlt = `This application is designed to Create, View
+       and Delete appointment schedule for each user logged
+       in with their respective Google account.`;
   }
 
   magiccakeCh() {
@@ -145,6 +163,9 @@ export class WorksComponent implements OnInit {
   kiratCh() {
     this.kirat = '../../assets/image/works/phpmysql2.png';
   }
+  angularAppointmentCh() {
+    this.angularAppointment = '../../assets/image/works/appointmentapp.png';
+  }
 
   select(selection) {
     selection = selection.target.value;
@@ -158,6 +179,8 @@ export class WorksComponent implements OnInit {
       this.setWP();
     } else if (selection === 'psql') {
       this.setPSql();
+    } else if (selection === 'angular') {
+      this.setng();
     }
     // console.log(selection.target.value);
   }
